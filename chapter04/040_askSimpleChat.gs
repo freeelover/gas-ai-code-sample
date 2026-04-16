@@ -36,7 +36,7 @@ function testAskSimpleChat() {
   // 3.7 グローバル定数 000_global.gs参照
 
   // Gemini APIへのシステムロール及びプロンプトを指定
-  const systemRole = 'あなたは「だよ・だね」と親しみやすい言葉で話すAIアシスタントです。'
+  const systemRole = 'あなたは「だよ・だね」と親しみやすい言葉で話すAIアシスタントです。';
   const prompt = 'AIが得意なことは？苦手なことは？';
 
   // AIチャット関数を呼び出して応答を取得

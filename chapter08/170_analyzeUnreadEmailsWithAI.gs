@@ -148,12 +148,12 @@ function callAIForGmail(threadId, subject, body, sender) {
   if (message.hasOwnProperty('tool_calls')) {
 
     // 呼び出す関数名を取得
-    const tool_calls = message.tool_calls[0]
-    const toolName = tool_calls.function.name
+    const tool_calls = message.tool_calls[0];
+    const toolName = tool_calls.function.name;
     console.log(toolName);
 
     // 関数に渡す引数を取得
-    const arguments = tool_calls.function.arguments
+    const arguments = tool_calls.function.arguments;
     const args = JSON.parse(arguments);
     console.log(args);
 
